@@ -492,6 +492,10 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.misys@2.0 \
     vendor.xiaomi.hardware.misys@3.0 \
     vendor.xiaomi.hardware.misys@4.0 \
+    libcamera_algoup_jni.xiaomi \
+    libcamera_mianode_jni.xiaomi \
+    libmicampostproc_client \
+    vendor.xiaomi.hardware.campostproc@1.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -512,6 +516,10 @@ PRODUCT_PACKAGES += \
     libcamxexternalformatutils \
     libcdsprpc \
     libcheckpid \
+    libcom.xiaomi.debug \
+    libcom.xiaomi.grallocutils \
+    libcom.xiaomi.metadatautils \
+    libcom.xiaomi.pluginutils \
     libconfigdb \
     libcvp2_1 \
     libcvp_common \
@@ -528,6 +536,7 @@ PRODUCT_PACKAGES += \
     libllvm-qcom \
     liblogwrap_vendor \
     libmdmdetect \
+    libmialgoengine \
     libmicuttlefish_fs \
     libmicuttlefish_utils \
     libmivsock_utils \
@@ -863,12 +872,10 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libQSEEComAPI \
-    libQTEEConnector_listener \
     libQTEEConnector_vendor \
     libQnnHtpAltPrepStub \
     libQnnHtpStub \
     libSNPE \
-    libStDrvInt \
     libTrueSight \
     libadreno_app_profiles \
     libadsp_default_listener \
@@ -918,10 +925,6 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcom.qti.chinodeutils \
-    libcom.xiaomi.debug \
-    libcom.xiaomi.grallocutils \
-    libcom.xiaomi.metadatautils \
-    libcom.xiaomi.pluginutils \
     libcpion \
     libcvface_api \
     libcvpcpuRev_skel \
@@ -960,7 +963,6 @@ PRODUCT_PACKAGES += \
     liblbs_core \
     libloadalgo_stub \
     libloc_api_v02 \
-    libloc_api_wds \
     libloc_socket \
     liblocationservice \
     liblocationservice_glue \
@@ -986,7 +988,6 @@ PRODUCT_PACKAGES += \
     libmialgo_utils \
     libmialgo_video_colourkeeping \
     libmialgo_video_seg \
-    libmialgoengine \
     libmibokeh_855 \
     libmibokeh_mask \
     libmibokeh_mask_dsp \
@@ -1064,7 +1065,6 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libsdmextension \
     libsdsprpc \
-    libsecureui \
     libsecureui_svcsock \
     libsensor_cal_v2 \
     libsensorcal \
@@ -1115,7 +1115,6 @@ PRODUCT_PACKAGES += \
     libvidhance_stabilizer \
     libvidhance_super_stabilization \
     libwa_depth \
-    libwa_opticalzoomfactor \
     libwa_refocus \
     libwa_widelens_undistort \
     libwapi_cert \
@@ -1326,6 +1325,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     vendor.xiaomi.hardware.displayfeature@1.0 \
+    MiuiCamera \
     CACertService \
     CneApp \
     IWlanService \
