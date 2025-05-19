@@ -963,6 +963,7 @@ PRODUCT_PACKAGES += \
     liblbs_core \
     libloadalgo_stub \
     libloc_api_v02 \
+    libloc_api_wds \
     libloc_socket \
     liblocationservice \
     liblocationservice_glue \

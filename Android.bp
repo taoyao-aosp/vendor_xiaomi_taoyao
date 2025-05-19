@@ -18275,6 +18275,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libloc_api_wds",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libloc_api_wds.so",
+            ],
+            shared_libs: [
+                "libgps.utils",
+                "libidl",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "liblocation_api",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libloc_socket",
     owner: "xiaomi",
     strip: {
@@ -31002,6 +31034,7 @@ cc_prebuilt_binary {
                 "proprietary/system_ext/bin/wfdservice64",
             ],
             shared_libs: [
+                "libwfdservice_shim",
                 "liblog",
                 "libutils",
                 "libcutils",
